@@ -1,0 +1,488 @@
+/*Fuentes de texto*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Raleway:wght@300&display=swap');
+
+/*Cambio de medidas en rem*/
+html{
+    font-size: 62.5%;
+    /*1 REM = 10px*/
+}
+
+/*Header*/
+
+#home{
+    width:15rem;
+    height:15rem;
+    margin: 2rem;
+}
+
+.div-nav{
+    display: flex;
+}
+
+.nav-bar{
+    background-color: rgb(246, 165, 59);
+    border-radius: 10rem;
+    margin-left: 10rem;
+    width: 130rem;
+    height: 8rem;
+    margin-top: 5rem;
+}
+
+.nav a{
+    color: white;
+    float: right;
+    margin-right: 4rem;
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    text-shadow: 0.1em 0.1em 0.1em rgb(157, 87, 0);
+    font-size: 3.7rem;
+    transition:all .3s ease-in-out;
+}
+
+.nav a:active{
+    color:#f7ae64;
+}
+
+/*Body*/
+
+body{
+    height:100%;
+    font-family: 'Oswald', sans-serif;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido{
+    margin: 14rem;
+    min-height:90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.titulo{
+    margin-top: -22rem;
+    font-family: 'Freehand', cursive;
+}
+
+.subtitulo{
+    margin-top: -10rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+div{
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 10rem;
+    text-shadow: 5px 5px 4px rgb(43, 42, 42);
+    color: rgb(255, 255, 255);
+    margin-top: 12rem;
+}
+
+h2{
+    font-size: 9rem;
+    margin-top: 10rem;
+    color: rgb(248, 150, 22);
+    text-shadow: 3px 3px 2px rgb(37, 37, 37);
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+}
+
+.mostrar{
+    text-decoration: none;
+    background-color: rgb(248, 150, 22);
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 3rem;
+    border: 2px solid #da7939;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 10rem;
+}
+
+.mostrar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 3.2rem;
+    transition:all .3s ease-in-out;
+}
+
+/*Seccion 1*/
+#seccion1{
+    background-color: rgba(240, 248, 255, 0.574);
+    width: 100%;
+    color: black;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(43, 42, 42);
+}
+#seccion1 p{
+    padding: 4rem;
+}
+#seccion2{
+    background-color: rgba(255, 255, 255, 0.83);
+    width: 100%;
+    color: black;
+}
+#seccion2Flex{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    padding: 3rem;
+}
+#seccion2Flex div:hover{
+    transition:all .6s ease-in-out;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+#seccion2Flex div p{
+    text-shadow: 0.1em 0.1em 0.1em rgb(130, 130, 130);
+}
+.hover-imagen:hover{
+    width: 17rem !important;
+    height: 17rem !important;
+}
+#seccion3{
+    background-color: aliceblue;
+    width: 100%;
+    color: black;
+}
+#icon{
+    width:15rem;
+    height:15rem;
+    margin: 2rem;
+}
+.imagenes-antesydespues{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 10rem;
+    margin-left: -15rem !important;
+    margin-top: -10rem;
+}
+#galeria{
+    width: 15rem;
+    height: 15rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+.galeria-1{
+    background-image: url(img/antes1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-1:hover{
+    background-image: url(img/despues1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-2{
+    background-image: url(img/antes2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-2:hover{
+    background-image: url(img/despues2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-3{
+    background-image: url(img/antes3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-3:hover{
+    background-image: url(img/despues3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-4{
+    background-image: url(img/antes4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria-4:hover{
+    background-image: url(img/despues4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#seccion4{
+    background-color: aliceblue;
+    width: 100%;
+    color: black;
+}
+
+/*Footer*/
+.footer{
+    background-color: rgb(80, 80, 80);
+    width: auto;
+    margin-top: 10rem;
+    bottom: 0;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+footer div{
+    display: inline-block;
+    margin: 4rem;
+}
+
+footer div a{
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+}
+
+/*OTRAS PÁGINAS*/
+
+/*IDENTIFICATE*/
+.contenido-identificate{
+    min-height:90%;
+    margin-left: 35%;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px gray;
+    width: 30rem;
+    height: 40rem;
+    text-align: center;
+}
+
+.formulario-identificate{
+    display: block;
+}
+
+.formulario-identificate div{
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.formulario-identificate div input{
+    background: rgb(241, 241, 241);
+    border: 1px solid #ff8000;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.formulario-identificate div button{
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titulo-identificate{
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(245, 191, 103));
+    color: white;
+}
+
+/*CERRAR SESIÓN*/
+.titulo-cerrar{
+    background: rgb(241, 241, 241);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.cerrar{
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 3rem;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#cerrar{
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 3rem;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    width: 20rem;
+    margin-right: 50%;
+}
+
+/*CLIENTE*/
+.contenido button{
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 3rem;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    width: 30rem;
+    margin-left: 40%;
+}
+
+#solicitudCitas{
+    margin-left: 36%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#medirPresupuesto{
+    margin-left: 36%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#solicitudCitas:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 3.2rem;
+    transition:all .3s ease-in-out;
+}
+
+#medirPresupuesto:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 3.2rem;
+    transition:all .3s ease-in-out;
+}
+
+/*SOLICITAR CITAS*/
+fieldset{
+    color: #ce5d00;
+    font-size: 2rem;
+}
+fieldset div{
+    color: white;
+}
+
+#formularioCitas{
+    margin-top: -3rem;
+}
+
+#formularioCitas fieldset div input{
+    background: rgb(241, 241, 241);
+    border: 1px solid #ff8000;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#formularioCitas fieldset div{
+    margin: 1rem;
+}
+
+#reformaArea{
+    background: rgb(241, 241, 241);
+    border: 1px solid #ff8000;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.boton input{
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 2rem;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1rem;
+}
+
+/*INFORMACIÓN*/
+.informacion-titulo{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#icon-informacion{
+    width: 10rem;
+    height: 10rem;
+}
+
+.contenido-informacion{
+    min-height:90%;
+    display:flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(240, 240, 240, 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+}
+
+.contenido-informacion div p{
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/*SOBRE NOSOTROS*/
+.contenido-sobrenosotros{
+    background-color: rgba(240, 240, 240, 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    padding: 6rem;
+    color: white;
+}
+
+.contenido-sobrenosotros p{
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+
+@media (min-width:550px) and (max-width:1024px){
+    .nav-bar{
+        height: 15rem;
+    }
+
+    #home{
+        width:25rem;
+        height:25rem;
+        margin: 2rem;
+    }
+
+    #icon{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #icon-informacion{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .contenido-informacion div p{
+        font-size: 2rem;
+    }
+
+    #solicitudCitas{
+        margin-left: 30%;
+    }
+
+    #medirPresupuesto{
+        margin-left: 30%;
+    }
+
+    .imagenes-antesydespues{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem !important;
+    }
+}
